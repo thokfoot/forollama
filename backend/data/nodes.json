@@ -1,0 +1,774 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "start",
+      "label": "Career Records of India",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_10th_decision",
+      "label": "10th — Stream Choice",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_science",
+      "label": "Science (PCM/PCB)",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_commerce",
+      "label": "Commerce",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_arts",
+      "label": "Humanities / Arts",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_diploma",
+      "label": "Diploma / ITI",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_12th_entrance",
+      "label": "12th & Entrance Exams",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_cracked",
+      "label": "Cracked a Top Exam",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_didnt_crack",
+      "label": "Didn't Crack — Now What?",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_drop_year",
+      "label": "Drop Year",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_college",
+      "label": "College & Degree Life",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_competitive",
+      "label": "Competitive Exams (UPSC/CAT/GATE)",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_campus_life",
+      "label": "Campus Reality",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_internships",
+      "label": "Internships & Skills",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_after_degree",
+      "label": "After Degree — Job vs Studies",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_direct_job",
+      "label": "Went for Job",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_pg_studies",
+      "label": "Went for PG / MBA",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_abroad",
+      "label": "Went Abroad",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "professional",
+      "label": "Earning Livelihood",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_first_job",
+      "label": "First Job Reality",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_fj_corporate",
+      "label": "Corporate / MNC",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_fj_startup",
+      "label": "Startup",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_fj_govt",
+      "label": "Govt / PSU",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_fj_family",
+      "label": "Family Business",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_1_5yr",
+      "label": "1 to 5 Years",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_1_5_same",
+      "label": "Stayed Same Field",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_1_5_switch",
+      "label": "Switched Fields",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_1_5_studies",
+      "label": "Went Back to Study",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_5_10yr",
+      "label": "5 to 10 Years",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_5_10_senior",
+      "label": "Climbed the Ladder",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_5_10_venture",
+      "label": "Started Own Venture",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_5_10_abroad",
+      "label": "Moved Abroad",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_money_reality",
+      "label": "Money & Stability",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_salary_journey",
+      "label": "Salary Journey",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_investments",
+      "label": "Savings & Investments",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_work_life",
+      "label": "Work-Life Balance",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_vocational_training",
+      "label": "Vocational Training",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_small_business_entry",
+      "label": "Small Business Entry",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_science_jee",
+      "label": "Engineering Entrance (JEE)",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_science_neet",
+      "label": "Medical Entrance (NEET)",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_science_research",
+      "label": "Pure Science & Research Track",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_commerce_ca",
+      "label": "CA Track",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_commerce_cs",
+      "label": "CS Track",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_commerce_cma",
+      "label": "CMA Track",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_arts_upsc",
+      "label": "UPSC Civil Services Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_arts_law",
+      "label": "Law Route (CLAT/LLB)",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_arts_media",
+      "label": "Media & Creative Arts Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_iti",
+      "label": "ITI Skill Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_polytechnic",
+      "label": "Polytechnic Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_nursing",
+      "label": "Nursing / Allied Health Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_livelihood_tracks",
+      "label": "Livelihood Routes (Any Stage)",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_freelancing",
+      "label": "Freelancing Path",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_digital_marketing",
+      "label": "Digital Marketing Path",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_family_business",
+      "label": "Family Business Path",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_small_scale_industry",
+      "label": "Small Scale Industry Path",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_content_creation",
+      "label": "Content Creation Path",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_defense_govt",
+      "label": "Defense & Govt Exams",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_nda",
+      "label": "NDA Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_ssc",
+      "label": "SSC Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_banking",
+      "label": "Banking Exams Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "s_railways",
+      "label": "Railway Exams Route",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_livelihood_any_stage",
+      "label": "Livelihood Build (Job / Business / Freelance)",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_job_track",
+      "label": "Job Growth Track",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_business_track",
+      "label": "Business Growth Track",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_freelance_track",
+      "label": "Freelance Growth Track",
+      "stage": "student",
+      "level": 0
+    },
+    {
+      "id": "p_creator_track",
+      "label": "Creator Economy Track",
+      "stage": "student",
+      "level": 0
+    }
+  ],
+  "relatedNodeMap": {
+    "start": [
+      "student",
+      "professional"
+    ],
+    "student": [
+      "s_10th_decision",
+      "s_12th_entrance",
+      "s_college",
+      "s_after_degree",
+      "s_defense_govt",
+      "s_livelihood_tracks"
+    ],
+    "s_10th_decision": [
+      "s_science",
+      "s_commerce",
+      "s_arts",
+      "s_diploma",
+      "s_vocational_training",
+      "s_small_business_entry",
+      "s_livelihood_tracks"
+    ],
+    "s_12th_entrance": [
+      "s_cracked",
+      "s_didnt_crack",
+      "s_drop_year"
+    ],
+    "s_college": [
+      "s_competitive",
+      "s_campus_life",
+      "s_internships",
+      "s_livelihood_tracks"
+    ],
+    "s_after_degree": [
+      "s_direct_job",
+      "s_pg_studies",
+      "s_abroad",
+      "s_livelihood_tracks",
+      "s_defense_govt"
+    ],
+    "professional": [
+      "p_first_job",
+      "p_1_5yr",
+      "p_5_10yr",
+      "p_money_reality",
+      "p_livelihood_any_stage"
+    ],
+    "p_first_job": [
+      "p_fj_corporate",
+      "p_fj_startup",
+      "p_fj_govt",
+      "p_fj_family"
+    ],
+    "p_1_5yr": [
+      "p_1_5_same",
+      "p_1_5_switch",
+      "p_1_5_studies"
+    ],
+    "p_5_10yr": [
+      "p_5_10_senior",
+      "p_5_10_venture",
+      "p_5_10_abroad"
+    ],
+    "p_money_reality": [
+      "p_salary_journey",
+      "p_investments",
+      "p_work_life"
+    ],
+    "s_science": [
+      "s_science_jee",
+      "s_science_neet",
+      "s_science_research",
+      "s_12th_entrance",
+      "s_college",
+      "s_after_degree",
+      "professional"
+    ],
+    "s_commerce": [
+      "s_commerce_ca",
+      "s_commerce_cs",
+      "s_commerce_cma",
+      "s_12th_entrance",
+      "s_college",
+      "s_after_degree",
+      "professional"
+    ],
+    "s_arts": [
+      "s_arts_upsc",
+      "s_arts_law",
+      "s_arts_media",
+      "s_12th_entrance",
+      "s_college",
+      "s_after_degree",
+      "professional"
+    ],
+    "s_diploma": [
+      "s_after_degree",
+      "professional",
+      "p_first_job",
+      "s_vocational_training",
+      "s_iti",
+      "s_polytechnic",
+      "s_nursing",
+      "s_livelihood_tracks"
+    ],
+    "s_vocational_training": [
+      "professional",
+      "p_first_job",
+      "p_money_reality",
+      "s_iti",
+      "s_polytechnic",
+      "s_nursing",
+      "s_livelihood_tracks"
+    ],
+    "s_small_business_entry": [
+      "professional",
+      "p_first_job",
+      "p_money_reality",
+      "s_family_business",
+      "s_small_scale_industry",
+      "s_livelihood_tracks"
+    ],
+    "s_cracked": [
+      "s_college",
+      "s_after_degree",
+      "professional"
+    ],
+    "s_didnt_crack": [
+      "s_college",
+      "s_after_degree",
+      "professional",
+      "s_livelihood_tracks",
+      "s_vocational_training",
+      "s_defense_govt"
+    ],
+    "s_drop_year": [
+      "s_12th_entrance",
+      "s_college",
+      "s_after_degree",
+      "professional",
+      "s_livelihood_tracks"
+    ],
+    "s_competitive": [
+      "s_after_degree",
+      "professional"
+    ],
+    "s_campus_life": [
+      "s_after_degree",
+      "professional"
+    ],
+    "s_internships": [
+      "s_after_degree",
+      "professional"
+    ],
+    "s_direct_job": [
+      "professional",
+      "p_first_job",
+      "p_livelihood_any_stage"
+    ],
+    "s_pg_studies": [
+      "professional",
+      "p_first_job",
+      "p_livelihood_any_stage"
+    ],
+    "s_abroad": [
+      "professional",
+      "p_first_job",
+      "p_livelihood_any_stage"
+    ],
+    "s_science_jee": [
+      "s_cracked",
+      "s_drop_year",
+      "s_college",
+      "s_livelihood_tracks",
+      "professional"
+    ],
+    "s_science_neet": [
+      "s_cracked",
+      "s_drop_year",
+      "s_college",
+      "s_livelihood_tracks",
+      "professional"
+    ],
+    "s_science_research": [
+      "s_college",
+      "s_pg_studies",
+      "professional"
+    ],
+    "s_commerce_ca": [
+      "s_college",
+      "s_competitive",
+      "professional"
+    ],
+    "s_commerce_cs": [
+      "s_college",
+      "s_competitive",
+      "professional"
+    ],
+    "s_commerce_cma": [
+      "s_college",
+      "s_competitive",
+      "professional"
+    ],
+    "s_arts_upsc": [
+      "s_competitive",
+      "s_defense_govt",
+      "professional"
+    ],
+    "s_arts_law": [
+      "s_college",
+      "s_competitive",
+      "professional"
+    ],
+    "s_arts_media": [
+      "s_college",
+      "s_livelihood_tracks",
+      "professional"
+    ],
+    "s_iti": [
+      "professional",
+      "p_first_job",
+      "p_livelihood_any_stage"
+    ],
+    "s_polytechnic": [
+      "professional",
+      "p_first_job",
+      "p_livelihood_any_stage"
+    ],
+    "s_nursing": [
+      "professional",
+      "p_first_job",
+      "p_livelihood_any_stage"
+    ],
+    "s_livelihood_tracks": [
+      "s_freelancing",
+      "s_digital_marketing",
+      "s_family_business",
+      "s_small_scale_industry",
+      "s_content_creation",
+      "professional",
+      "p_livelihood_any_stage"
+    ],
+    "s_freelancing": [
+      "professional",
+      "p_freelance_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_digital_marketing": [
+      "professional",
+      "p_job_track",
+      "p_freelance_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_family_business": [
+      "professional",
+      "p_business_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_small_scale_industry": [
+      "professional",
+      "p_business_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_content_creation": [
+      "professional",
+      "p_creator_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_defense_govt": [
+      "s_nda",
+      "s_ssc",
+      "s_banking",
+      "s_railways",
+      "professional"
+    ],
+    "s_nda": [
+      "professional",
+      "p_job_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_ssc": [
+      "professional",
+      "p_job_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_banking": [
+      "professional",
+      "p_job_track",
+      "p_livelihood_any_stage"
+    ],
+    "s_railways": [
+      "professional",
+      "p_job_track",
+      "p_livelihood_any_stage"
+    ],
+    "p_fj_corporate": [
+      "professional"
+    ],
+    "p_fj_startup": [
+      "professional"
+    ],
+    "p_fj_govt": [
+      "professional"
+    ],
+    "p_fj_family": [
+      "professional"
+    ],
+    "p_salary_journey": [
+      "professional"
+    ],
+    "p_investments": [
+      "professional"
+    ],
+    "p_work_life": [
+      "professional"
+    ],
+    "p_1_5_same": [
+      "professional"
+    ],
+    "p_1_5_switch": [
+      "professional"
+    ],
+    "p_1_5_studies": [
+      "professional"
+    ],
+    "p_5_10_senior": [
+      "professional"
+    ],
+    "p_5_10_venture": [
+      "professional"
+    ],
+    "p_5_10_abroad": [
+      "professional"
+    ],
+    "p_livelihood_any_stage": [
+      "p_job_track",
+      "p_business_track",
+      "p_freelance_track",
+      "p_creator_track",
+      "p_1_5yr",
+      "p_money_reality"
+    ],
+    "p_job_track": [
+      "p_1_5yr",
+      "p_5_10yr",
+      "p_money_reality",
+      "professional"
+    ],
+    "p_business_track": [
+      "p_1_5yr",
+      "p_5_10yr",
+      "p_money_reality",
+      "professional"
+    ],
+    "p_freelance_track": [
+      "p_1_5yr",
+      "p_5_10yr",
+      "p_money_reality",
+      "professional"
+    ],
+    "p_creator_track": [
+      "p_1_5yr",
+      "p_5_10yr",
+      "p_money_reality",
+      "professional"
+    ]
+  }
+}

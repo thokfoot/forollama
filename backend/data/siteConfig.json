@@ -1,0 +1,54 @@
+{
+  "flipper": {
+    "titles": [
+      "DOCTOR",
+      "ENGINEER",
+      "SCIENTIST",
+      "ARTIST",
+      "BUSINESS",
+      "DESIGNER",
+      "TEACHER"
+    ],
+    "tagline": "Records of achievements and mistakes",
+    "buttonText": "Proceed to know more",
+    "flipDuration": 1900,
+    "flipSpeed": 220
+  },
+  "site": {
+    "brandName": "Career Records Of India",
+    "description": "Career Records Of India. Real career journeys, real numbers, no fluff.",
+    "disclaimer": "Career Records does not provide career advice. This platform documents experiences, not recommendations. Your path will be different. Use this as context, not guidance."
+  },
+  "social": {
+    "twitter": "",
+    "linkedin": "",
+    "instagram": "",
+    "youtube": "",
+    "github": ""
+  },
+  "footer": {
+    "copyright": "2026 Career Records Of India. All rights reserved.",
+    "links": [
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "/terms"
+      }
+    ]
+  },
+  "mobileEntry": {
+    "eyebrowText": "Entry Mode",
+    "titleText": "Pick your path lens",
+    "selectLabel": "Select",
+    "browseLabel": "Browse all careers",
+    "studentLabel": "For Students",
+    "studentEyebrow": "School to first decisions",
+    "studentSubtitle": "Streams, college choices, and early career direction.",
+    "livelihoodLabel": "For Earning Livelihood",
+    "livelihoodEyebrow": "Job-holders, freelancers, and business owners",
+    "livelihoodSubtitle": "Livelihood can start right after 10th through jobs, freelance work, or small business."
+  }
+}

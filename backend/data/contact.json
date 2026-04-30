@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ct_1777273832805_7a6b3d",
+    "createdAt": "2026-04-27T07:10:32.805707+00:00",
+    "name": "Test User",
+    "email": "test@example.com",
+    "message": "Hello from automated test",
+    "status": "new"
+  },
+  {
+    "id": "ct_1777273850960_05c1ca",
+    "createdAt": "2026-04-27T07:10:50.960892+00:00",
+    "name": "Ankur Test",
+    "email": "ankur@test.com",
+    "message": "Automated smoke test — please ignore.",
+    "status": "new"
+  },
+  {
+    "id": "ct_1777274424288_139980",
+    "createdAt": "2026-04-27T07:20:24.288799+00:00",
+    "name": "Final",
+    "email": "final@example.com",
+    "message": "Final smoke test",
+    "status": "new"
+  },
+  {
+    "id": "ct_1777278120767_a3665d",
+    "createdAt": "2026-04-27T08:22:00.767887+00:00",
+    "name": "Post-fix",
+    "email": "postfix@test.com",
+    "message": "After applying review fixes",
+    "status": "new"
+  }
+]

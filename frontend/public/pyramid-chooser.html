@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Pyramid UI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #060912;
+      color: #e8eefc;
+      min-height: 100vh;
+    }
+    .page-head {
+      text-align: center;
+      padding: 32px 16px 12px;
+    }
+    .page-head h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #f2b84b;
+      letter-spacing: -0.02em;
+    }
+    .page-head p {
+      color: #9bb0d9;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      max-width: 1300px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+    }
+    @media (max-width: 960px) { .grid { grid-template-columns: 1fr; max-width: 540px; } }
+
+    .card {
+      border: 1px solid #2f3f61;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #0f172a, #080e1c);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      border-color: rgba(242,184,75,0.5);
+      box-shadow: 0 12px 40px rgba(242,184,75,0.08), 0 0 0 1px rgba(242,184,75,0.15);
+    }
+    .card-head {
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid #1e2d4a;
+      background: linear-gradient(180deg, #131f38, #0d1628);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: #0a0e18;
+      letter-spacing: 0.04em;
+    }
+    .tag-gold { background: linear-gradient(90deg, #f2b84b, #ffe09b); }
+    .tag-cyan { background: linear-gradient(90deg, #44d5ff, #9eedff); }
+    .tag-mint { background: linear-gradient(90deg, #49e6af, #9cffdd); }
+    .card-head h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 10px 0 4px;
+      letter-spacing: -0.01em;
+    }
+    .card-head p {
+      font-size: 13px;
+      color: #8fa4cc;
+      line-height: 1.5;
+    }
+    .card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .source {
+      font-size: 11px;
+      color: #6b84b0;
+      margin-bottom: 10px;
+      padding: 4px 8px;
+      border: 1px solid #1e2d4a;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px;
+    }
+    .feature-list li {
+      font-size: 12px;
+      color: #b3c2e2;
+      padding: 4px 0;
+      border-bottom: 1px solid #151e32;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .feature-list li::before {
+      content: "▸";
+      color: rgba(242,184,75,0.6);
+      font-size: 10px;
+    }
+
+    /* ─── PYRAMID 1 MOCK: Staircase ─── */
+    .mock-staircase {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 14px;
+      border: 1px solid #1e2d4a;
+      border-radius: 12px;
+      background: #0a1120;
+      margin-bottom: 12px;
+    }
+    .stair-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.15s;
+    }
+    .stair-row:hover { transform: translateX(4px); }
+    .stair-icon {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(196,160,82,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+      background: radial-gradient(circle, rgba(196,160,82,0.12), transparent);
+    }
+    .stair-bar {
+      height: 34px;
+      border-radius: 10px;
+      border: 1px solid rgba(196,160,82,0.2);
+      background: linear-gradient(90deg, rgba(196,160,82,0.12), transparent);
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      position: relative;
+    }
+    .stair-bar::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 20%; bottom: 20%;
+      width: 3px; border-radius: 2px;
+      background: rgba(196,160,82,0.4);
+    }
+    .stair-bar span {
+      font-size: 11px;
+      font-weight: 700;
+      color: #f0e6d0;
+      white-space: nowrap;
+    }
+    .stair-bar small {
+      font-size: 9px;
+      color: rgba(255,255,255,0.45);
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+    .stair-tag {
+      font-size: 9px;
+      font-weight: 700;
+      color: rgba(196,160,82,0.7);
+      background: rgba(196,160,82,0.08);
+      border: 1px solid rgba(196,160,82,0.15);
+      border-radius: 999px;
+      padding: 2px 6px;
+      margin-left: auto;
+    }
+    .connector {
+      width: 1px;
+      height: 6px;
+      margin-left: 16px;
+      background: linear-gradient(to bottom, rgba(196,160,82,0.3), rgba(196,160,82,0.08));
+    }
+
+    /* ─── PYRAMID 2 MOCK: Vertical Stack ─── */
+    .mock-vstack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 14px;
+      border: 1px solid #1e2d4a;
+      border-radius: 12px;
+      background: #0a1120;
+      margin-bottom: 12px;
+    }
+    .vstack-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid rgba(196,160,82,0.2);
+      border-radius: 12px;
+      background: linear-gradient(90deg, rgba(196,160,82,0.09), rgba(255,255,255,0.02));
+      position: relative;
+      transition: border-color 0.15s;
+    }
+    .vstack-btn:hover { border-color: rgba(196,160,82,0.5); }
+    .vstack-btn::before {
+      content: '';
+      position: absolute;
+      left: -1px; top: 25%; bottom: 25%;
+      width: 3px; border-radius: 3px;
+      background: rgba(196,160,82,0.3);
+    }
+    .vstack-btn:hover::before { background: #C4A052; }
+    .vstack-emoji { font-size: 22px; flex-shrink: 0; }
+    .vstack-text { flex: 1; }
+    .vstack-text strong { display: block; font-size: 13px; color: #f0e6d0; }
+    .vstack-text small { font-size: 11px; color: #8fa4cc; }
+    .vstack-arrow { font-size: 16px; color: rgba(196,160,82,0.5); }
+
+    /* ─── PYRAMID 3 MOCK: 3-Column Board ─── */
+    .mock-board {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      padding: 14px;
+      border: 1px solid #1e2d4a;
+      border-radius: 12px;
+      background: #0a1120;
+      margin-bottom: 12px;
+    }
+    .board-col {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .board-col-head {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 8px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .col-gold .board-col-head { color: #f2b84b; background: rgba(196,160,82,0.1); border: 1px solid rgba(196,160,82,0.2); }
+    .col-cyan .board-col-head { color: #44d5ff; background: rgba(68,213,255,0.08); border: 1px solid rgba(68,213,255,0.2); }
+    .col-mint .board-col-head { color: #49e6af; background: rgba(73,230,175,0.08); border: 1px solid rgba(73,230,175,0.2); }
+    .board-node {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      font-size: 11px;
+      font-weight: 600;
+      color: #d0daf0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color 0.12s;
+    }
+    .board-node:hover { border-color: rgba(255,255,255,0.2); }
+    .board-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .col-gold .board-dot { background: #f2b84b; }
+    .col-cyan .board-dot { background: #44d5ff; }
+    .col-mint .board-dot { background: #49e6af; }
+    .board-clips {
+      font-size: 9px;
+      color: rgba(255,255,255,0.4);
+      margin-left: auto;
+    }
+
+    /* status badge */
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-top: auto;
+    }
+    .status-active {
+      color: #49e6af;
+      background: rgba(73,230,175,0.1);
+      border: 1px solid rgba(73,230,175,0.25);
+    }
+    .status-stored {
+      color: #f2b84b;
+      background: rgba(242,184,75,0.08);
+      border: 1px solid rgba(242,184,75,0.2);
+    }
+    .status-css {
+      color: #44d5ff;
+      background: rgba(68,213,255,0.08);
+      border: 1px solid rgba(68,213,255,0.2);
+    }
+    .status-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+    }
+    .status-active .status-dot { background: #49e6af; }
+    .status-stored .status-dot { background: #f2b84b; }
+    .status-css .status-dot { background: #44d5ff; }
+  </style>
+</head>
+<body>
+  <div class="page-head">
+    <h1>Choose Your Pyramid UI</h1>
+    <p>Teeno pyramid-shape UIs jo workspace mein hain — pick one to work on</p>
+  </div>
+
+  <div class="grid">
+    <!-- PYRAMID 1 -->
+    <div class="card">
+      <div class="card-head">
+        <span class="tag tag-gold">Pyramid 1</span>
+        <h2>V1 Staircase Pyramid</h2>
+        <p>Tapering rows — wide at bottom, narrow at top. Each row = emoji circle + gradient bar.</p>
+      </div>
+      <div class="card-body">
+        <div class="source">📁 src/components/Interactive/QuickEntryScreen.jsx</div>
+
+        <div class="mock-staircase">
+          <div class="stair-row" style="width:100%">
+            <div class="stair-icon">📚</div>
+            <div class="stair-bar" style="flex:1"><span>10th / 12th</span><small>Choose stream</small></div>
+            <span class="stair-tag">BASE</span>
+          </div>
+          <div class="connector"></div>
+          <div class="stair-row" style="width:85%">
+            <div class="stair-icon">🎓</div>
+            <div class="stair-bar" style="flex:1"><span>College</span><small>In college or graduated</small></div>
+            <span class="stair-tag">+2 YRS</span>
+          </div>
+          <div class="connector"></div>
+          <div class="stair-row" style="width:68%">
+            <div class="stair-icon">💼</div>
+            <div class="stair-bar" style="flex:1"><span>First Job</span><small>0–5 years</small></div>
+            <span class="stair-tag">0-5 YRS</span>
+          </div>
+          <div class="connector"></div>
+          <div class="stair-row" style="width:52%">
+            <div class="stair-icon">📈</div>
+            <div class="stair-bar" style="flex:1"><span>Growing</span><small>5–15 years</small></div>
+            <span class="stair-tag">5-15 YRS</span>
+          </div>
+          <div class="connector"></div>
+          <div class="stair-row" style="width:38%">
+            <div class="stair-icon">👨‍👩‍👧</div>
+            <div class="stair-bar" style="flex:1"><span>Parent</span><small>Guiding child</small></div>
+            <span class="stair-tag">MENTOR</span>
+          </div>
+        </div>
+
+        <ul class="feature-list">
+          <li>5 life-stage levels with tapering widths</li>
+          <li>Gold glow hover + selection animation</li>
+          <li>Connector lines between rows</li>
+          <li>Mobile-responsive (smaller icons + labels)</li>
+          <li>Progress dots on right side</li>
+          <li>No tabs — single flat staircase</li>
+        </ul>
+
+        <div class="status status-active"><div class="status-dot"></div> ACTIVE in V1 app</div>
+      </div>
+    </div>
+
+    <!-- PYRAMID 2 -->
+    <div class="card">
+      <div class="card-head">
+        <span class="tag tag-cyan">Pyramid 2</span>
+        <h2>V2 Stage Picker</h2>
+        <p>Equal-width vertical buttons. Each = emoji + label + subtitle + arrow. Clean & minimal.</p>
+      </div>
+      <div class="card-body">
+        <div class="source">📁 v2/frontend/src/styles.css (.ss-pyramid classes)</div>
+
+        <div class="mock-vstack">
+          <div class="vstack-btn">
+            <span class="vstack-emoji">📚</span>
+            <div class="vstack-text"><strong>10th / 12th</strong><small>Choose stream or subject path</small></div>
+            <span class="vstack-arrow">→</span>
+          </div>
+          <div class="vstack-btn">
+            <span class="vstack-emoji">🎓</span>
+            <div class="vstack-text"><strong>College / Graduation</strong><small>In college or recently graduated</small></div>
+            <span class="vstack-arrow">→</span>
+          </div>
+          <div class="vstack-btn">
+            <span class="vstack-emoji">💼</span>
+            <div class="vstack-text"><strong>Job Start</strong><small>First job, 0–5 years</small></div>
+            <span class="vstack-arrow">→</span>
+          </div>
+          <div class="vstack-btn">
+            <span class="vstack-emoji">📈</span>
+            <div class="vstack-text"><strong>Growing Career</strong><small>Senior, pivot, 5–15 years</small></div>
+            <span class="vstack-arrow">→</span>
+          </div>
+          <div class="vstack-btn">
+            <span class="vstack-emoji">👨‍👩‍👧</span>
+            <div class="vstack-text"><strong>Parent / Guide</strong><small>Guiding a child's path</small></div>
+            <span class="vstack-arrow">→</span>
+          </div>
+        </div>
+
+        <ul class="feature-list">
+          <li>Equal-width buttons (no taper)</li>
+          <li>Left accent bar with hover glow</li>
+          <li>Arrow slides right on hover</li>
+          <li>Kicker → Title → Subtitle typography</li>
+          <li>Clean minimal design</li>
+          <li>No tabs — single column</li>
+        </ul>
+
+        <div class="status status-css"><div class="status-dot"></div> CSS only — no component uses it</div>
+      </div>
+    </div>
+
+    <!-- PYRAMID 3 -->
+    <div class="card">
+      <div class="card-head">
+        <span class="tag tag-mint">Pyramid 3</span>
+        <h2>V2 StageBoard</h2>
+        <p>3-column drill-down. Gold root → Cyan streams → Mint careers. Card-based selection.</p>
+      </div>
+      <div class="card-body">
+        <div class="source">📁 v2/frontend/src/components/Interactive/StageBoard.jsx</div>
+
+        <div class="mock-board">
+          <div class="board-col col-gold">
+            <div class="board-col-head">Block</div>
+            <div class="board-node"><div class="board-dot"></div> Class 10–12 <span class="board-clips">12</span></div>
+            <div class="board-node"><div class="board-dot"></div> College <span class="board-clips">8</span></div>
+            <div class="board-node"><div class="board-dot"></div> First Job <span class="board-clips">5</span></div>
+          </div>
+          <div class="board-col col-cyan">
+            <div class="board-col-head">Pick Path</div>
+            <div class="board-node"><div class="board-dot"></div> PCM <span class="board-clips">4</span></div>
+            <div class="board-node"><div class="board-dot"></div> PCB <span class="board-clips">3</span></div>
+            <div class="board-node"><div class="board-dot"></div> Commerce <span class="board-clips">6</span></div>
+          </div>
+          <div class="board-col col-mint">
+            <div class="board-col-head">Drill Deeper</div>
+            <div class="board-node"><div class="board-dot"></div> Engineering <span class="board-clips">3</span></div>
+            <div class="board-node"><div class="board-dot"></div> Medicine <span class="board-clips">2</span></div>
+            <div class="board-node"><div class="board-dot"></div> CA / CS <span class="board-clips">4</span></div>
+          </div>
+        </div>
+
+        <ul class="feature-list">
+          <li>3-column horizontal grid layout</li>
+          <li>Color-coded: Gold → Cyan → Mint</li>
+          <li>Cards with clip counts</li>
+          <li>Sequential column selection</li>
+          <li>Breadcrumb path header</li>
+          <li>No tabs — column drill-down</li>
+        </ul>
+
+        <div class="status status-stored"><div class="status-dot"></div> Stored — not rendered in V2 app</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

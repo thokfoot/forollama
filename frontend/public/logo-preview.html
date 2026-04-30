@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Career Records — Logo Preview & Upload</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: #08080f; font-family: Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 40px 20px; gap: 40px; }
+
+        /* ── Logo preview card ── */
+        .logo {
+            background: #050506;
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 48px 60px;
+            text-align: center;
+            width: 100%;
+            max-width: 480px;
+        }
+        .road {
+            width: 300px;
+            height: 10px;
+            background: #333;
+            margin: 0 auto 20px;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .tyre-marks {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent, transparent 20px,
+                #C4A052 20px, #C4A052 40px
+            );
+        }
+        .brand-name { color: #C4A052; font-size: 48px; font-weight: bold; margin: 8px 0; }
+        .tagline { color: white; font-size: 16px; opacity: 0.7; margin-bottom: 20px; }
+
+        /* uploaded logo preview */
+        #uploadedLogo {
+            max-width: 240px;
+            max-height: 120px;
+            object-fit: contain;
+            margin: 0 auto 12px;
+            display: none;
+            border-radius: 8px;
+        }
+        .logo-meta { font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 6px; }
+
+        /* ── Upload card ── */
+        .upload-card {
+            background: #0d0d16;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 32px;
+            width: 100%;
+            max-width: 480px;
+        }
+        .upload-card h2 { color: #C4A052; font-size: 15px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 20px; }
+
+        .drop-zone {
+            border: 2px dashed rgba(196,160,82,0.3);
+            border-radius: 10px;
+            padding: 32px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+            position: relative;
+        }
+        .drop-zone:hover, .drop-zone.drag-over { border-color: #C4A052; background: rgba(196,160,82,0.04); }
+        .drop-zone input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+        .drop-zone p { color: rgba(255,255,255,0.4); font-size: 13px; margin-top: 8px; }
+        .drop-icon { font-size: 32px; }
+
+        .token-row { margin: 16px 0 0; }
+        .token-row label { display: block; color: rgba(255,255,255,0.4); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+        .token-row input {
+            width: 100%;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            color: white;
+            font-size: 13px;
+            padding: 10px 12px;
+            outline: none;
+        }
+        .token-row input:focus { border-color: rgba(196,160,82,0.5); }
+
+        .btn-row { display: flex; gap: 10px; margin-top: 16px; }
+        button {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        button:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn-upload { background: #C4A052; color: #000; }
+        .btn-upload:hover:not(:disabled) { background: #D4B062; }
+        .btn-remove { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.1); }
+        .btn-remove:hover:not(:disabled) { background: rgba(220,60,60,0.15); color: #f87171; border-color: rgba(220,60,60,0.3); }
+
+        #status {
+            margin-top: 14px;
+            font-size: 12px;
+            min-height: 18px;
+            text-align: center;
+            border-radius: 6px;
+            padding: 6px 10px;
+        }
+        #status.ok  { color: #4ade80; background: rgba(74,222,128,0.08); }
+        #status.err { color: #f87171; background: rgba(248,113,113,0.08); }
+        #status.inf { color: rgba(255,255,255,0.4); }
+
+        #preview-thumb { display: none; max-height: 64px; margin: 12px auto 0; border-radius: 6px; }
+    </style>
+</head>
+<body>
+
+    <!-- ── Logo Card ── -->
+    <div class="logo">
+        <div class="road"><div class="tyre-marks"></div></div>
+        <img id="uploadedLogo" src="" alt="Career Records Logo" />
+        <div class="brand-name">Career Records</div>
+        <div class="tagline">Where Experience Leaves Its Trail</div>
+        <div class="logo-meta" id="logoMeta"></div>
+    </div>
+
+    <!-- ── Upload Card ── -->
+    <div class="upload-card">
+        <h2>Upload Logo</h2>
+
+        <div class="drop-zone" id="dropZone">
+            <input type="file" id="fileInput" accept="image/png,image/jpeg,image/svg+xml,image/webp,image/gif" />
+            <div class="drop-icon">🖼️</div>
+            <strong style="color:rgba(255,255,255,0.7);font-size:14px;">Choose or drag &amp; drop</strong>
+            <p>PNG, JPG, SVG, WEBP, GIF — max 4 MB</p>
+        </div>
+
+        <img id="preview-thumb" alt="preview" />
+
+        <div class="token-row">
+            <label>Admin JWT Token</label>
+            <input type="password" id="tokenInput" placeholder="Paste your admin token here" />
+        </div>
+
+        <div class="btn-row">
+            <button class="btn-upload" id="btnUpload" disabled>Upload Logo</button>
+            <button class="btn-remove" id="btnRemove">Remove Logo</button>
+        </div>
+
+        <div id="status" class="inf">Ready.</div>
+    </div>
+
+<script>
+    const API = 'http://localhost:5000';
+    const fileInput  = document.getElementById('fileInput');
+    const tokenInput = document.getElementById('tokenInput');
+    const btnUpload  = document.getElementById('btnUpload');
+    const btnRemove  = document.getElementById('btnRemove');
+    const status     = document.getElementById('status');
+    const dropZone   = document.getElementById('dropZone');
+    const previewThumb = document.getElementById('preview-thumb');
+    const uploadedLogo = document.getElementById('uploadedLogo');
+    const logoMeta     = document.getElementById('logoMeta');
+
+    // ── Load existing logo on page load ──
+    async function loadCurrentLogo() {
+        try {
+            const r = await fetch(`${API}/api/logo`);
+            const data = await r.json();
+            if (data.logo) {
+                uploadedLogo.src = `${API}${data.logo}`;
+                uploadedLogo.style.display = 'block';
+                const kb = data.size ? ` · ${Math.round(data.size/1024)} KB` : '';
+                const ts = data.uploadedAt ? ` · ${new Date(data.uploadedAt).toLocaleString()}` : '';
+                logoMeta.textContent = `${data.filename}${kb}${ts}`;
+            }
+        } catch { /* backend may not be running */ }
+    }
+    loadCurrentLogo();
+
+    // ── File selection / drag-drop ──
+    fileInput.addEventListener('change', onFileSelected);
+    dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+    dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+    dropZone.addEventListener('drop', e => {
+        e.preventDefault();
+        dropZone.classList.remove('drag-over');
+        if (e.dataTransfer.files.length) {
+            fileInput.files = e.dataTransfer.files;
+            onFileSelected();
+        }
+    });
+
+    function onFileSelected() {
+        const f = fileInput.files[0];
+        if (!f) return;
+        btnUpload.disabled = false;
+        const url = URL.createObjectURL(f);
+        previewThumb.src = url;
+        previewThumb.style.display = 'block';
+        setStatus(`Selected: ${f.name} (${Math.round(f.size/1024)} KB)`, 'inf');
+    }
+
+    // ── Upload ──
+    btnUpload.addEventListener('click', async () => {
+        const f = fileInput.files[0];
+        const token = tokenInput.value.trim();
+        if (!f) return setStatus('No file selected.', 'err');
+        if (!token) return setStatus('Paste your admin JWT token first.', 'err');
+
+        btnUpload.disabled = true;
+        setStatus('Uploading…', 'inf');
+
+        const fd = new FormData();
+        fd.append('logo', f);
+
+        try {
+            const r = await fetch(`${API}/api/admin/logo`, {
+                method: 'POST',
+                headers: { Authorization: `Bearer ${token}` },
+                body: fd
+            });
+            const data = await r.json();
+            if (!r.ok) throw new Error(data.error || r.statusText);
+            setStatus(`✓ Uploaded: ${data.filename}`, 'ok');
+            uploadedLogo.src = `${API}${data.logo}?t=${Date.now()}`;
+            uploadedLogo.style.display = 'block';
+            const kb = Math.round(data.size/1024);
+            logoMeta.textContent = `${data.filename} · ${kb} KB · ${new Date(data.uploadedAt).toLocaleString()}`;
+        } catch (e) {
+            setStatus(`Error: ${e.message}`, 'err');
+        } finally {
+            btnUpload.disabled = false;
+        }
+    });
+
+    // ── Remove ──
+    btnRemove.addEventListener('click', async () => {
+        const token = tokenInput.value.trim();
+        if (!token) return setStatus('Paste your admin JWT token first.', 'err');
+
+        btnRemove.disabled = true;
+        setStatus('Removing…', 'inf');
+        try {
+            const r = await fetch(`${API}/api/admin/logo`, {
+                method: 'DELETE',
+                headers: { Authorization: `Bearer ${token}` }
+            });
+            const data = await r.json();
+            if (!r.ok) throw new Error(data.error || r.statusText);
+            uploadedLogo.style.display = 'none';
+            logoMeta.textContent = '';
+            previewThumb.style.display = 'none';
+            setStatus('✓ Logo removed.', 'ok');
+        } catch (e) {
+            setStatus(`Error: ${e.message}`, 'err');
+        } finally {
+            btnRemove.disabled = false;
+        }
+    });
+
+    function setStatus(msg, type) {
+        status.textContent = msg;
+        status.className = type;
+    }
+</script>
+</body>
+</html>

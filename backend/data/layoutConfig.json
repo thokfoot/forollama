@@ -1,0 +1,608 @@
+{
+  "version": 1,
+  "global": {
+    "connectorColor": "#d4b876",
+    "connectorWidth": 0.42,
+    "showGuide": true,
+    "guideColor": "#78c8ff",
+    "treeTuning": {
+      "rootYDesktop": 18,
+      "rootYMobile": 10,
+      "childrenYStartDesktop": 32,
+      "childrenYStartMobile": 22,
+      "childrenYEndDesktop": 86,
+      "childrenYEndMobile": 88,
+      "marginXRatioDesktop": 0.06,
+      "marginXRatioMobile": 0.12,
+      "maxColsDesktop": 6,
+      "maxColsMobile": 3,
+      "sideShrinkPerNodeDesktop": 0.008,
+      "sideShrinkPerNodeMobile": 0.01,
+      "maxSideShrinkDesktop": 0.08,
+      "maxSideShrinkMobile": 0.09,
+      "rowCenterSingleRatio": 0.44,
+      "zigzagShiftDesktop": 6.4,
+      "zigzagShiftMobileSingleRow": 6,
+      "zigzagShiftMobileMultiRow": 4.5,
+      "tightenMobileHigh": 0.9,
+      "tightenMobileMid": 0.93,
+      "tightenMobileLow": 0.96,
+      "tightenDesktopHigh": 0.9,
+      "tightenDesktopMid": 0.95,
+      "tightenDesktopLow": 0.98,
+      "compactBoostSingleRow": 0.94,
+      "edgePadding": 5,
+      "connectorCurveRatio": 0.26,
+      "scaleDesktop8": 0.54,
+      "scaleDesktop6": 0.68,
+      "scaleDesktop4": 0.78,
+      "scaleDesktop3": 0.9,
+      "scaleDesktopDefault": 1,
+      "scaleMobile6": 0.66,
+      "scaleMobile4": 0.78,
+      "scaleMobileDefault": 0.9,
+      "labelGapDesktop": 18,
+      "labelGapMobile": 12,
+      "mobileChildLabelWidth": 92,
+      "rootLabelWidthDesktop": 200,
+      "rootLabelWidthMobile": 170,
+      "childLabelWidthDesktopDense": 94,
+      "childLabelWidthDesktopMid": 114,
+      "childLabelWidthDesktopSparse": 140,
+      "childLabelMinDesktop": 72,
+      "childLabelMinMobile": 52,
+      "childLabelGapDesktop": 16,
+      "childLabelGapMobile": 6
+    },
+    "customCss": "",
+    "uiComponents": {
+      "mapFrame": {
+        "top": 20,
+        "left": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "designButton": {
+        "top": 10,
+        "right": 12,
+        "left": null,
+        "bottom": null
+      },
+      "mobileFab": {
+        "left": 12,
+        "right": 12,
+        "bottom": 12,
+        "top": null
+      },
+      "mobileDrawer": {
+        "left": 0,
+        "right": 0,
+        "bottom": 0,
+        "top": null,
+        "maxHeight": 65
+      },
+      "stageStrip": {
+        "top": 92,
+        "left": 50,
+        "bottom": null,
+        "right": null
+      },
+      "pathInsights": {
+        "bottom": 20,
+        "left": 50,
+        "top": null,
+        "right": null
+      },
+      "coveragePanel": {
+        "top": 148,
+        "right": 12,
+        "left": null,
+        "bottom": null
+      },
+      "endpointModal": {
+        "top": 50,
+        "left": 50
+      },
+      "compareModal": {
+        "top": 50,
+        "left": 50
+      }
+    },
+    "siblingTemplates": {
+      "2": [
+        {
+          "x": 28,
+          "y": 45
+        },
+        {
+          "x": 73,
+          "y": 46
+        }
+      ],
+      "3": [
+        {
+          "x": 50,
+          "y": 47
+        },
+        {
+          "x": 23,
+          "y": 47
+        },
+        {
+          "x": 79,
+          "y": 49
+        }
+      ],
+      "4": [
+        {
+          "x": 38,
+          "y": 44
+        },
+        {
+          "x": 61,
+          "y": 45
+        },
+        {
+          "x": 16,
+          "y": 54
+        },
+        {
+          "x": 80,
+          "y": 54
+        }
+      ],
+      "5": [
+        {
+          "x": 12,
+          "y": 35
+        },
+        {
+          "x": 85,
+          "y": 35
+        },
+        {
+          "x": 26,
+          "y": 49
+        },
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 73,
+          "y": 51
+        }
+      ],
+      "6": [
+        {
+          "x": 26,
+          "y": 39
+        },
+        {
+          "x": 40,
+          "y": 59
+        },
+        {
+          "x": 58,
+          "y": 59
+        },
+        {
+          "x": 12,
+          "y": 18
+        },
+        {
+          "x": 71,
+          "y": 39
+        },
+        {
+          "x": 88,
+          "y": 30
+        }
+      ]
+    },
+    "linkedSiblingShapes": true,
+    "siblingTemplatesMobile": {
+      "2": [
+        {
+          "x": 22,
+          "y": 45
+        },
+        {
+          "x": 80,
+          "y": 45
+        }
+      ],
+      "3": [
+        {
+          "x": 50,
+          "y": 49
+        },
+        {
+          "x": 17,
+          "y": 24
+        },
+        {
+          "x": 83,
+          "y": 25
+        }
+      ],
+      "4": [
+        {
+          "x": 10,
+          "y": 15
+        },
+        {
+          "x": 90,
+          "y": 16
+        },
+        {
+          "x": 30,
+          "y": 80
+        },
+        {
+          "x": 58,
+          "y": 45
+        }
+      ],
+      "5": [
+        {
+          "x": 19,
+          "y": 16
+        },
+        {
+          "x": 81,
+          "y": 15
+        },
+        {
+          "x": 17,
+          "y": 65
+        },
+        {
+          "x": 51,
+          "y": 32
+        },
+        {
+          "x": 80,
+          "y": 66
+        }
+      ],
+      "6": [
+        {
+          "x": 30,
+          "y": 52
+        },
+        {
+          "x": 12,
+          "y": 9
+        },
+        {
+          "x": 84,
+          "y": 9
+        },
+        {
+          "x": 13,
+          "y": 73
+        },
+        {
+          "x": 66,
+          "y": 52
+        },
+        {
+          "x": 85,
+          "y": 74
+        }
+      ]
+    },
+    "sunTemplateDesktop": {
+      "x": null,
+      "y": 20
+    },
+    "sunTemplateMobile": {
+      "x": null,
+      "y": 18
+    },
+    "linkedSiblingShapesByRoot": {},
+    "layout": {
+      "edgeSpread": "balanced",
+      "marginXRatio": 0.035
+    }
+  },
+  "nodes": {
+    "p_first_job": {
+      "x": 20, "y": 38,
+      "mobileX": 20, "mobileY": 38
+    },
+    "p_1_5yr": {
+      "x": 50, "y": 24,
+      "mobileX": 50, "mobileY": 24
+    },
+    "p_5_10yr": {
+      "x": 78, "y": 40,
+      "mobileX": 78, "mobileY": 40
+    },
+    "p_money_reality": {
+      "x": 45, "y": 58,
+      "mobileX": 45, "mobileY": 58
+    },
+    "p_fj_corporate": {
+      "x": 20, "y": 32,
+      "mobileX": 20, "mobileY": 32
+    },
+    "p_fj_startup": {
+      "x": 75, "y": 28,
+      "mobileX": 75, "mobileY": 28
+    },
+    "p_fj_govt": {
+      "x": 20, "y": 62,
+      "mobileX": 20, "mobileY": 62
+    },
+    "p_fj_family": {
+      "x": 74, "y": 58,
+      "mobileX": 74, "mobileY": 58
+    },
+    "p_1_5_switch": {
+      "x": 42,
+      "y": 83,
+      "mobileX": 42,
+      "mobileY": 83
+    },
+    "p_1_5_studies": {
+      "x": 70,
+      "y": 51,
+      "mobileX": 70,
+      "mobileY": 51
+    },
+    "p_1_5_same": {
+      "x": 32,
+      "y": 30,
+      "mobileX": 32,
+      "mobileY": 30
+    },
+    "p_5_10_senior": {
+      "x": 73,
+      "y": 33,
+      "mobileX": 73,
+      "mobileY": 33
+    },
+    "p_5_10_abroad": {
+      "x": 71,
+      "y": 57,
+      "mobileX": 71,
+      "mobileY": 57
+    },
+    "p_5_10_venture": {
+      "x": 23,
+      "y": 67,
+      "mobileX": 23,
+      "mobileY": 67
+    },
+    "p_10_pivot": {
+      "x": 72,
+      "y": 45,
+      "mobileX": 72,
+      "mobileY": 45
+    },
+    "p_10_biz": {
+      "x": 43,
+      "y": 65,
+      "mobileX": 43,
+      "mobileY": 65
+    },
+    "p_10_lead": {
+      "x": 20,
+      "y": 25,
+      "mobileX": 20,
+      "mobileY": 25
+    },
+    "s_12_college": {
+      "x": 21,
+      "y": 63,
+      "mobileX": 21,
+      "mobileY": 63
+    },
+    "s_college": {
+      "x": 81,
+      "y": 63,
+      "mobileX": 81,
+      "mobileY": 63
+    },
+    "s_12_cracked": {
+      "x": 21,
+      "y": 26,
+      "mobileX": 21,
+      "mobileY": 26
+    },
+    "s_12_didnt": {
+      "x": 79,
+      "y": 25,
+      "mobileX": 79,
+      "mobileY": 25
+    },
+    "s_12_drop": {
+      "x": 36,
+      "y": 51,
+      "mobileX": 36,
+      "mobileY": 51
+    },
+    "s_12_state": {
+      "x": 69,
+      "y": 62,
+      "mobileX": 69,
+      "mobileY": 62
+    },
+    "s_science": {
+      "x": 20,
+      "y": 26,
+      "mobileX": 20,
+      "mobileY": 26
+    },
+    "s_commerce": {
+      "x": 83,
+      "y": 25,
+      "mobileX": 83,
+      "mobileY": 25
+    },
+    "s_arts": {
+      "x": 38,
+      "y": 52,
+      "mobileX": 38,
+      "mobileY": 52
+    },
+    "s_diploma": {
+      "x": 71,
+      "y": 66,
+      "mobileX": 71,
+      "mobileY": 66
+    },
+    "s_sci_engg": {
+      "x": 14,
+      "y": 60,
+      "mobileX": 14,
+      "mobileY": 60
+    },
+    "s_sci_pure": {
+      "x": 78,
+      "y": 61,
+      "mobileX": 78,
+      "mobileY": 61
+    },
+    "s_sci_medical": {
+      "x": 48,
+      "y": 45,
+      "mobileX": 48,
+      "mobileY": 45
+    },
+    "s_com_bba": {
+      "x": 16,
+      "y": 66,
+      "mobileX": 16,
+      "mobileY": 66
+    },
+    "s_com_bcom": {
+      "x": 80,
+      "y": 53,
+      "mobileX": 80,
+      "mobileY": 53
+    },
+    "s_com_ca": {
+      "x": 51,
+      "y": 43,
+      "mobileX": 51,
+      "mobileY": 43
+    },
+    "s_arts_civil": {
+      "x": 17,
+      "y": 56,
+      "mobileX": 17,
+      "mobileY": 56
+    },
+    "s_arts_creative": {
+      "x": 83,
+      "y": 65,
+      "mobileX": 83,
+      "mobileY": 65
+    },
+    "s_arts_law": {
+      "x": 49,
+      "y": 45,
+      "mobileX": 49,
+      "mobileY": 45
+    },
+    "s_dip_lateral": {
+      "x": 15,
+      "y": 63,
+      "mobileX": 15,
+      "mobileY": 63
+    },
+    "s_dip_freelance": {
+      "x": 86,
+      "y": 64,
+      "mobileX": 86,
+      "mobileY": 64
+    },
+    "s_dip_job": {
+      "x": 51,
+      "y": 42,
+      "mobileX": 51,
+      "mobileY": 42
+    },
+    "s_drop_retry": {
+      "x": 23,
+      "y": 31,
+      "mobileX": 23,
+      "mobileY": 31
+    },
+    "s_competitive": {
+      "x": 78,
+      "y": 30,
+      "mobileX": 78,
+      "mobileY": 30
+    },
+    "s_further": {
+      "x": 38,
+      "y": 52,
+      "mobileX": 38,
+      "mobileY": 52
+    },
+    "s_deg_job": {
+      "x": 64,
+      "y": 65,
+      "mobileX": 64,
+      "mobileY": 65
+    },
+    "s_cat": {
+      "x": 21,
+      "y": 71,
+      "mobileX": 21,
+      "mobileY": 71
+    },
+    "s_gate": {
+      "x": 81,
+      "y": 57,
+      "mobileX": 81,
+      "mobileY": 57
+    },
+    "s_upsc": {
+      "x": 54,
+      "y": 42,
+      "mobileX": 54,
+      "mobileY": 42
+    },
+    "s_deg_5_10yr": {
+      "x": 15,
+      "y": 58,
+      "mobileX": 15,
+      "mobileY": 58
+    },
+    "s_deg_prof_bridge": {
+      "x": 89,
+      "y": 63,
+      "mobileX": 89,
+      "mobileY": 63
+    },
+    "s_deg_1_5yr": {
+      "x": 51,
+      "y": 43,
+      "mobileX": 51,
+      "mobileY": 43
+    },
+    "s_pg_life": {
+      "x": 14,
+      "y": 60,
+      "mobileX": 14,
+      "mobileY": 60
+    },
+    "s_pg_job": {
+      "x": 92,
+      "y": 65,
+      "mobileX": 92,
+      "mobileY": 65
+    },
+    "s_pg_ent": {
+      "x": 49,
+      "y": 42,
+      "mobileX": 49,
+      "mobileY": 42
+    }
+  }
+}

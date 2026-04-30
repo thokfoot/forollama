@@ -1,0 +1,403 @@
+{
+  "id": "start",
+  "label": "Career Records of India",
+  "emoji": "🌟",
+  "children": [
+    {
+      "id": "student",
+      "label": "Student",
+      "subtitle": "Class 10 to first job",
+      "emoji": "🎓",
+      "children": [
+        {
+          "id": "s_10th_decision",
+          "label": "10th — Stream Choice",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "s_science",
+              "label": "Science (PCM/PCB)",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "The pressure-cooker path",
+              "emoji": "🔬",
+              "sectionId": "s_science"
+            },
+            {
+              "id": "s_commerce",
+              "label": "Commerce",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Numbers, business & finance",
+              "emoji": "📊",
+              "sectionId": "s_commerce"
+            },
+            {
+              "id": "s_arts",
+              "label": "Humanities / Arts",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "UPSC, law, media & more",
+              "emoji": "🎨",
+              "sectionId": "s_arts"
+            },
+            {
+              "id": "s_diploma",
+              "label": "Diploma / ITI",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Polytechnic & skill-first route",
+              "emoji": "🔧",
+              "sectionId": "s_diploma"
+            }
+          ],
+          "subtitle": "Science, Commerce, Arts or Diploma?",
+          "emoji": "📚",
+          "pos": {
+            "x": 10,
+            "y": 58
+          }
+        },
+        {
+          "id": "s_12th_entrance",
+          "label": "12th & Entrance Exams",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "s_cracked",
+              "label": "Cracked a Top Exam",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "IIT, AIIMS, NLU & more",
+              "emoji": "🏆",
+              "sectionId": "s_cracked"
+            },
+            {
+              "id": "s_didnt_crack",
+              "label": "Didn't Crack — Now What?",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Plan B and moving forward",
+              "emoji": "🤔",
+              "sectionId": "s_didnt_crack"
+            },
+            {
+              "id": "s_drop_year",
+              "label": "Drop Year",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "When the first attempt failed",
+              "emoji": "🔄",
+              "sectionId": "s_drop_year"
+            }
+          ],
+          "subtitle": "JEE, NEET, CUET & drop years",
+          "emoji": "✏️",
+          "pos": {
+            "x": 25,
+            "y": 58
+          }
+        },
+        {
+          "id": "s_college",
+          "label": "College & Degree Life",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "s_competitive",
+              "label": "Competitive Exams (UPSC/CAT/GATE)",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "The long-haul exam grind",
+              "emoji": "🏅",
+              "sectionId": "s_competitive"
+            },
+            {
+              "id": "s_campus_life",
+              "label": "Campus Reality",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Hostel, societies & peer pressure",
+              "emoji": "🎓",
+              "sectionId": "s_campus_life"
+            },
+            {
+              "id": "s_internships",
+              "label": "Internships & Skills",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Real-world exposure before graduation",
+              "emoji": "💡",
+              "sectionId": "s_internships"
+            }
+          ],
+          "subtitle": "Campus, exams & real skills",
+          "emoji": "🏫",
+          "pos": {
+            "x": 40,
+            "y": 58
+          }
+        },
+        {
+          "id": "s_after_degree",
+          "label": "After Degree — Job vs Studies",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "s_direct_job",
+              "label": "Went for Job",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Campus placement or off-campus hustle",
+              "emoji": "💼",
+              "sectionId": "s_direct_job"
+            },
+            {
+              "id": "s_pg_studies",
+              "label": "Went for PG / MBA",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Higher studies after graduation",
+              "emoji": "🎓",
+              "sectionId": "s_pg_studies"
+            },
+            {
+              "id": "s_abroad",
+              "label": "Went Abroad",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "MS, job or settlement overseas",
+              "emoji": "✈️",
+              "sectionId": "s_abroad"
+            }
+          ],
+          "subtitle": "The biggest fork in the road",
+          "emoji": "🔀",
+          "pos": {
+            "x": 55,
+            "y": 58
+          }
+        }
+      ],
+      "pos": {
+        "x": 18,
+        "y": 30
+      }
+    },
+    {
+      "id": "professional",
+      "label": "Earning Livelihood",
+      "subtitle": "Job, business, and freelance growth",
+      "emoji": "💼",
+      "children": [
+        {
+          "id": "p_first_job",
+          "label": "First Job Reality",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "p_fj_corporate",
+              "label": "Corporate / MNC",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Cubicle life & appraisals",
+              "emoji": "🏢",
+              "sectionId": "p_fj_corporate"
+            },
+            {
+              "id": "p_fj_startup",
+              "label": "Startup",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Chaos, equity & hustle",
+              "emoji": "🚀",
+              "sectionId": "p_fj_startup"
+            },
+            {
+              "id": "p_fj_govt",
+              "label": "Govt / PSU",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Stability & sarkari perks",
+              "emoji": "🏛️",
+              "sectionId": "p_fj_govt"
+            },
+            {
+              "id": "p_fj_family",
+              "label": "Family Business",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Legacy or burden?",
+              "emoji": "🏠",
+              "sectionId": "p_fj_family"
+            }
+          ],
+          "subtitle": "Corporate, startup or sarkari?",
+          "emoji": "💼",
+          "pos": {
+            "x": 42,
+            "y": 58
+          }
+        },
+        {
+          "id": "p_1_5yr",
+          "label": "1 to 5 Years",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "p_1_5_same",
+              "label": "Stayed Same Field",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Specialising deeper",
+              "emoji": "🎯",
+              "sectionId": "p_1_5_same"
+            },
+            {
+              "id": "p_1_5_switch",
+              "label": "Switched Fields",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "IT to marketing & beyond",
+              "emoji": "🔀",
+              "sectionId": "p_1_5_switch"
+            },
+            {
+              "id": "p_1_5_studies",
+              "label": "Went Back to Study",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "MBA, MS, or upskilling",
+              "emoji": "📚",
+              "sectionId": "p_1_5_studies"
+            }
+          ],
+          "subtitle": "Early career crossroads",
+          "emoji": "📈",
+          "pos": {
+            "x": 52,
+            "y": 58
+          }
+        },
+        {
+          "id": "p_5_10yr",
+          "label": "5 to 10 Years",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "p_5_10_senior",
+              "label": "Climbed the Ladder",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Manager, lead, director",
+              "emoji": "🪜",
+              "sectionId": "p_5_10_senior"
+            },
+            {
+              "id": "p_5_10_venture",
+              "label": "Started Own Venture",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Bootstrapped or funded",
+              "emoji": "💡",
+              "sectionId": "p_5_10_venture"
+            },
+            {
+              "id": "p_5_10_abroad",
+              "label": "Moved Abroad",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Gulf, US, Canada, UK",
+              "emoji": "✈️",
+              "sectionId": "p_5_10_abroad"
+            }
+          ],
+          "subtitle": "Mid-career decisions",
+          "emoji": "💎",
+          "pos": {
+            "x": 62,
+            "y": 58
+          }
+        },
+        {
+          "id": "p_money_reality",
+          "label": "Money & Stability",
+          "stage": "student",
+          "level": 0,
+          "children": [
+            {
+              "id": "p_salary_journey",
+              "label": "Salary Journey",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "From first CTC to current package",
+              "emoji": "💵",
+              "sectionId": "p_salary_journey"
+            },
+            {
+              "id": "p_investments",
+              "label": "Savings & Investments",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "What worked and what didn't",
+              "emoji": "📈",
+              "sectionId": "p_investments"
+            },
+            {
+              "id": "p_work_life",
+              "label": "Work-Life Balance",
+              "stage": "student",
+              "level": 0,
+              "children": [],
+              "subtitle": "Family, health & burnout reality",
+              "emoji": "⚖️",
+              "sectionId": "p_work_life"
+            }
+          ],
+          "subtitle": "Salary, savings and security",
+          "emoji": "💰",
+          "pos": {
+            "x": 72,
+            "y": 58
+          }
+        }
+      ],
+      "pos": {
+        "x": 50,
+        "y": 30
+      }
+    }
+  ]
+}

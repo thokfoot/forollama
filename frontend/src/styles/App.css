@@ -1,0 +1,60 @@
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+.animate-slide-down {
+    animation: slide-down 40s linear infinite;
+    animation-delay: 0s !important;
+}
+
+
+.animate-slide-up {
+    animation: slide-up 40s linear infinite;
+    animation-delay: 0s !important;
+}
+
+
+/* Removed animation pause on hover/focus for the entire roll to keep marquee smooth */
+
+.profession-slide:hover,
+.profession-slide:focus {
+    font-size: 1.6rem !important;
+    color: #C4B080 !important;
+    z-index: 2;
+    text-shadow: 0 2px 16px #000, 0 0 8px #C4B08099;
+    transition: font-size 0.2s, color 0.2s, text-shadow 0.2s;
+}
+
+/* Styles for IdentityFlipper profession items */
+@media (prefers-reduced-motion: reduce) {
+    .animate-slide-down,
+    .animate-slide-up {
+        animation: none !important;
+    }
+}
+
+/* ── Desktop-only block — 4 corner testimonials ── */
+.desktop-only-block { display: none; }
+@media (min-width: 1024px) { .desktop-only-block { display: block; } }
+
+/* ── Single testimonial — show between lg and desktop ── */
+.lg-only-block { display: none; }
+@media (min-width: 768px) and (max-width: 1023px) { .lg-only-block { display: block; } }

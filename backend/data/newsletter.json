@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ns_1777273832903_c7f6f9",
+    "createdAt": "2026-04-27T07:10:32.903750+00:00",
+    "email": "subscriber@example.com",
+    "source": "footer"
+  },
+  {
+    "id": "ns_1777274424420_d4d6e0",
+    "createdAt": "2026-04-27T07:20:24.420244+00:00",
+    "email": "newsletter-final@example.com",
+    "source": "footer"
+  },
+  {
+    "id": "ns_1777277226145_609e8d",
+    "createdAt": "2026-04-27T08:07:06.145969+00:00",
+    "email": "final-footer-test@croin.test",
+    "source": "footer"
+  },
+  {
+    "id": "ns_1777278120911_771924",
+    "createdAt": "2026-04-27T08:22:00.911831+00:00",
+    "email": "postfix-news@test.com",
+    "source": "footer"
+  }
+]

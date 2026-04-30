@@ -1,0 +1,43 @@
+{
+  "name": "Career Records Of India",
+  "short_name": "Career Records",
+  "description": "Explore real career journeys interactively — from school to professional life.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08080f",
+  "theme_color": "#C4A052",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "categories": ["education", "lifestyle"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Explore Career Tree",
+      "short_name": "Explore",
+      "description": "Open the interactive career tree",
+      "url": "/",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Share Your Journey",
+      "short_name": "Submit",
+      "description": "Submit your career story",
+      "url": "/submit",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ]
+}

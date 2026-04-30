@@ -1,0 +1,244 @@
+[
+  {
+    "id": "corp-fresher-raj",
+    "title": "MNC Life at 22: What They Don't Tell You in Campus",
+    "professionalId": "raj_01",
+    "professionalName": "Raj",
+    "nodeId": "p_first_job",
+    "professionId": "p_first_job",
+    "persona": "Corporate fresher, 0-2 years, Science/Engg",
+    "dna": "AABADBB",
+    "_dna_legend": {
+      "pos0_profession": "A=Corporate/MNC",
+      "pos1_stream": "A=STEM/Science",
+      "pos2_experience": "B=0-2 yrs",
+      "pos3_admission": "A=Merit",
+      "pos4_marks": "D=Below 60%",
+      "pos5_location": "B=Tier-2",
+      "pos6_salary": "B=6-15 LPA"
+    },
+    "background": {
+      "marks": "below_60",
+      "entry": "merit",
+      "stream": "engineering",
+      "experience_years": 1,
+      "salary_range": "6_to_15"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "videoId": "dQw4w9WgXcQ",
+    "durationSec": 1800,
+    "segments": [
+      { "phase": "first_job_reality",  "nodeId": "p_first_job",    "start": 60,   "end": 420  },
+      { "phase": "industry_reality",   "nodeId": "p_first_job",    "start": 421,  "end": 780  },
+      { "phase": "career_reflection",  "nodeId": "p_1_5yr",        "start": 781,  "end": 1200 }
+    ]
+  },
+  {
+    "id": "govt-psu-priya",
+    "title": "PSU vs Private: Salary, Security & the Real Trade-off",
+    "professionalId": "priya_02",
+    "professionalName": "Priya",
+    "nodeId": "p_first_job",
+    "professionId": "p_first_job",
+    "persona": "PSU engineer, 1.5 years, Govt sector",
+    "dna": "BAAABBB",
+    "_dna_legend": {
+      "pos0_profession": "B=Govt/PSU",
+      "pos1_stream": "A=STEM/Science",
+      "pos2_experience": "A=0-2 yrs",
+      "pos3_admission": "A=Merit",
+      "pos4_marks": "B=Above 80%",
+      "pos5_location": "B=Tier-2",
+      "pos6_salary": "B=6-15 LPA"
+    },
+    "background": {
+      "marks": "above_80",
+      "entry": "merit",
+      "stream": "engineering",
+      "experience_years": 2,
+      "salary_range": "6_to_15"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=M7lc1UVf-VE",
+    "videoId": "M7lc1UVf-VE",
+    "durationSec": 2100,
+    "segments": [
+      { "phase": "first_job_reality",  "nodeId": "p_first_job",    "start": 30,   "end": 490  },
+      { "phase": "salary_reality",     "nodeId": "p_money_reality", "start": 491,  "end": 900  },
+      { "phase": "career_path",        "nodeId": "p_1_5yr",        "start": 901,  "end": 1500 }
+    ]
+  },
+  {
+    "id": "startup-switch-neha",
+    "title": "From Bank RM to Fintech: The Switch No One Talks About",
+    "professionalId": "neha_03",
+    "professionalName": "Neha",
+    "nodeId": "p_1_5yr",
+    "professionId": "p_1_5yr",
+    "persona": "Fintech ops, former banker, 3-5 years",
+    "dna": "CBBBCBB",
+    "_dna_legend": {
+      "pos0_profession": "C=Startup/SME",
+      "pos1_stream": "B=Commerce/Finance",
+      "pos2_experience": "B=3-5 yrs",
+      "pos3_admission": "B=Entrance Exam",
+      "pos4_marks": "C=60-80%",
+      "pos5_location": "B=Tier-2",
+      "pos6_salary": "B=6-15 LPA"
+    },
+    "background": {
+      "marks": "60_80",
+      "entry": "entrance",
+      "stream": "commerce",
+      "experience_years": 4,
+      "salary_range": "6_to_15"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+    "videoId": "9bZkp7q19f0",
+    "durationSec": 2410,
+    "segments": [
+      { "phase": "first_job_reality",  "nodeId": "p_first_job",    "start": 20,   "end": 400  },
+      { "phase": "career_switch",      "nodeId": "p_1_5yr",        "start": 401,  "end": 900  },
+      { "phase": "career_reflection",  "nodeId": "p_5_10yr",       "start": 901,  "end": 1500 }
+    ]
+  },
+  {
+    "id": "senior-dev-amit",
+    "title": "Senior Dev Reality: 5-10 Years in Corporate India",
+    "professionalId": "amit_04",
+    "professionalName": "Amit",
+    "nodeId": "p_5_10yr",
+    "professionId": "p_5_10yr",
+    "persona": "Senior software engineer, 7 years, FAANG-adjacent",
+    "dna": "AACABCB",
+    "_dna_legend": {
+      "pos0_profession": "A=Corporate/MNC",
+      "pos1_stream": "A=STEM/Science",
+      "pos2_experience": "C=5-10 yrs",
+      "pos3_admission": "A=Merit",
+      "pos4_marks": "B=Above 80%",
+      "pos5_location": "C=Metro",
+      "pos6_salary": "B=6-15 LPA (negotiating up)"
+    },
+    "background": {
+      "marks": "above_80",
+      "entry": "merit",
+      "stream": "engineering",
+      "experience_years": 7,
+      "salary_range": "15_to_40"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+    "videoId": "kJQP7kiw5Fk",
+    "durationSec": 2860,
+    "segments": [
+      { "phase": "first_job_reality",  "nodeId": "p_first_job",    "start": 36,   "end": 600  },
+      { "phase": "mid_career",         "nodeId": "p_5_10yr",       "start": 601,  "end": 1200 },
+      { "phase": "salary_reality",     "nodeId": "p_money_reality", "start": 1201, "end": 1800 },
+      { "phase": "career_reflection",  "nodeId": "p_5_10yr",       "start": 1801, "end": 2500 }
+    ]
+  },
+  {
+    "id": "freelance-growth-sara",
+    "title": "Freelance at ₹6LPA to ₹40LPA: The Untold Journey",
+    "professionalId": "sara_05",
+    "professionalName": "Sara",
+    "nodeId": "p_1_5yr",
+    "professionId": "p_1_5yr",
+    "persona": "Freelance designer turned agency owner",
+    "dna": "DCBBCAB",
+    "_dna_legend": {
+      "pos0_profession": "D=Freelance/Own",
+      "pos1_stream": "C=Arts/Creative",
+      "pos2_experience": "B=3-5 yrs",
+      "pos3_admission": "B=Entrance",
+      "pos4_marks": "C=60-80%",
+      "pos5_location": "A=Metro Tier-1",
+      "pos6_salary": "B=6-15 LPA (growing)"
+    },
+    "background": {
+      "marks": "60_80",
+      "entry": "entrance",
+      "stream": "arts",
+      "experience_years": 4,
+      "salary_range": "6_to_15"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+    "videoId": "fJ9rUzIMcZQ",
+    "durationSec": 2200,
+    "segments": [
+      { "phase": "first_job_reality",  "nodeId": "p_first_job",    "start": 60,   "end": 480  },
+      { "phase": "freelance_growth",   "nodeId": "p_1_5yr",        "start": 481,  "end": 1100 },
+      { "phase": "money_reality",      "nodeId": "p_money_reality", "start": 1101, "end": 1800 }
+    ]
+  },
+  {
+    "id": "leadership-ravi",
+    "title": "12 Years in Banking: Branch Manager Reality Check",
+    "professionalId": "ravi_06",
+    "professionalName": "Ravi",
+    "nodeId": "p_money_reality",
+    "professionId": "p_money_reality",
+    "persona": "Public sector banker, 12 years, Branch Manager",
+    "dna": "BDDADBB",
+    "_dna_legend": {
+      "pos0_profession": "B=Govt/PSU",
+      "pos1_stream": "D=Other",
+      "pos2_experience": "D=10+ yrs",
+      "pos3_admission": "A=Merit",
+      "pos4_marks": "D=Below 60%",
+      "pos5_location": "B=Tier-2",
+      "pos6_salary": "B=6-15 LPA"
+    },
+    "background": {
+      "marks": "below_60",
+      "entry": "merit",
+      "stream": "",
+      "experience_years": 12,
+      "salary_range": "6_to_15"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "videoId": "dQw4w9WgXcQ",
+    "durationSec": 2860,
+    "segments": [
+      { "phase": "first_job_reality",  "nodeId": "p_first_job",    "start": 36,   "end": 468  },
+      { "phase": "mid_career",         "nodeId": "p_1_5yr",        "start": 469,  "end": 900  },
+      { "phase": "senior_reality",     "nodeId": "p_5_10yr",       "start": 901,  "end": 1491 },
+      { "phase": "money_stability",    "nodeId": "p_money_reality", "start": 1492, "end": 2146 },
+      { "phase": "career_reflection",  "nodeId": "p_money_reality", "start": 2147, "end": 2590 }
+    ]
+  },
+  {
+    "id": "startup-founder-vikram",
+    "title": "From Startup Employee to Founder: The Real Math",
+    "professionalId": "vikram_07",
+    "professionalName": "Vikram",
+    "nodeId": "p_5_10yr",
+    "professionId": "p_5_10yr",
+    "persona": "Startup founder, ex-corporate, 8 years total",
+    "dna": "CACDABCB",
+    "_dna_legend": {
+      "pos0_profession": "C=Startup",
+      "pos1_stream": "A=STEM/Engg",
+      "pos2_experience": "C=5-10 yrs",
+      "pos3_admission": "D=Lateral",
+      "pos4_marks": "A=Top Scorer",
+      "pos5_location": "B=Tier-2",
+      "pos6_salary": "C=15-40 LPA"
+    },
+    "background": {
+      "marks": "gold_medalist",
+      "entry": "lateral",
+      "stream": "engineering",
+      "experience_years": 8,
+      "salary_range": "15_to_40"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=uelHwf8o7_U",
+    "videoId": "uelHwf8o7_U",
+    "durationSec": 3100,
+    "segments": [
+      { "phase": "early_career",       "nodeId": "p_first_job",    "start": 60,   "end": 600  },
+      { "phase": "growth_years",       "nodeId": "p_1_5yr",        "start": 601,  "end": 1200 },
+      { "phase": "senior_level",       "nodeId": "p_5_10yr",       "start": 1201, "end": 2000 },
+      { "phase": "founder_journey",    "nodeId": "p_money_reality", "start": 2001, "end": 2800 }
+    ]
+  }
+]

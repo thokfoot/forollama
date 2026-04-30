@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "global": {
+    "preferNodePosition": true,
+    "autoDistributeFallback": true,
+    "layout": {
+      "marginXRatio": 0.035,
+      "minNodeSpacingX": 22,
+      "rootY": 20,
+      "zoomedRootY": 10,
+      "childrenYStart": 28,
+      "zoomedChildrenYStart": 18,
+      "childrenYEndDesktop": 86,
+      "childrenYEndMobile": 80,
+      "targetRows": 2,
+      "maxCols": 0
+    },
+    "node": {
+      "sizeScale": 1,
+      "shape": "planet"
+    },
+    "scaling": {
+      "mode": "count-based",
+      "tiers": [
+        {
+          "minCount": 8,
+          "scale": 0.62
+        },
+        {
+          "minCount": 6,
+          "scale": 0.68
+        },
+        {
+          "minCount": 4,
+          "scale": 0.78
+        },
+        {
+          "minCount": 3,
+          "scale": 0.92
+        }
+      ],
+      "fallbackScale": 1
+    },
+    "labels": {
+      "rootWidth": 160,
+      "minWidth": 64,
+      "mobileMinWidth": 72,
+      "maxWidth": 160,
+      "mobileSidebarGutter": 44,
+      "mobileGap": 4,
+      "desktopDenseWidth": 88,
+      "desktopMidWidth": 104,
+      "desktopSparseWidth": 136,
+      "desktopDenseRatio": 0.075,
+      "desktopMidRatio": 0.09,
+      "desktopSparseRatio": 0.125,
+      "nonRootOffsetY": 16,
+      "rootOffsetY": 42
+    },
+    "mobile": {
+      "densityPenalty": 0.05,
+      "densityFloor": 0.72,
+      "baselineWidth": 390,
+      "baselineHeight": 780,
+      "minNodeScale": 0.35,
+      "swipeThreshold": 35
+    },
+    "planets": {
+      "earth": {
+        "r": 7,
+        "c1": "#4FC3F7"
+      },
+      "mars": {
+        "r": 6,
+        "c1": "#EF7C5A"
+      },
+      "jupiter": {
+        "r": 9.5,
+        "c1": "#D4A968"
+      },
+      "saturn": {
+        "r": 7.5,
+        "c1": "#E8D090"
+      },
+      "neptune": {
+        "r": 6.5,
+        "c1": "#6496DC"
+      },
+      "uranus": {
+        "r": 7,
+        "c1": "#7ADFE8"
+      }
+    },
+    "connector": {
+      "curve": 0.25,
+      "baseThickness": 1,
+      "midThickness": 0.333,
+      "thinThickness": 0.125,
+      "activeThickness": 0.667
+    }
+  },
+  "nodes": {
+     "student": { "x": 36, "y": 55 },
+     "professional": { "x": 50, "y": 37 },
+     "s_10th_decision": { "x": 29, "y": 82 },
+     "s_12th_entrance": { "x": 50, "y": 61 },
+     "s_college_life": { "x": 74, "y": 82 },
+     "s_after_degree": { "x": 36, "y": 63 },
+     "p_first_job": { "x": 52, "y": 61 },
+     "p_1_5yr": { "x": 68, "y": 82 },
+     "p_5_10yr": { "x": 82, "y": 63 },
+     "p_money_reality": { "x": 29, "y": 82 },
+  }
+}

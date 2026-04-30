@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1a1408"/>
+      <stop offset="40%" stop-color="#0c0a06"/>
+      <stop offset="100%" stop-color="#050403"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C4A052" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#C4A052" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="38%" cy="32%" r="60%">
+      <stop offset="0%"   stop-color="#FFFDE8"/>
+      <stop offset="20%"  stop-color="#FFE866"/>
+      <stop offset="45%"  stop-color="#FFA500"/>
+      <stop offset="72%"  stop-color="#FF6200"/>
+      <stop offset="100%" stop-color="#8C1A00" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="sunGlow">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feFlood flood-color="#FFB830" flood-opacity="0.4"/>
+      <feComposite in2="b" operator="in" result="g"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="600" cy="240" rx="500" ry="320" fill="url(#glow)"/>
+
+  <!-- Grid lines -->
+  <g stroke="rgba(196,160,82,0.06)" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Orbit rings -->
+  <ellipse cx="600" cy="220" rx="180" ry="40" fill="none" stroke="rgba(196,160,82,0.12)" stroke-width="1"/>
+  <ellipse cx="600" cy="220" rx="280" ry="65" fill="none" stroke="rgba(196,160,82,0.09)" stroke-width="1"/>
+  <ellipse cx="600" cy="220" rx="380" ry="88" fill="none" stroke="rgba(196,160,82,0.06)" stroke-width="1"/>
+
+  <!-- Sun -->
+  <circle cx="600" cy="220" r="52" fill="url(#sun)" filter="url(#sunGlow)"/>
+
+  <!-- Planet 1 — Earth blue -->
+  <circle cx="780" cy="220" r="22" fill="#1A72B8"/>
+  <circle cx="780" cy="220" r="22" fill="rgba(200,238,255,0.25)"/>
+  <circle cx="771" cy="212" rx="10" ry="6" fill="rgba(100,220,255,0.2)" rx="10" ry="6"/>
+
+  <!-- Planet 2 — Mars red -->
+  <circle cx="450" cy="178" r="18" fill="#9C3518"/>
+  <circle cx="450" cy="178" r="18" fill="rgba(255,180,140,0.18)"/>
+
+  <!-- Planet 3 — Saturn gold -->
+  <ellipse cx="920" cy="168" rx="38" ry="12" fill="none" stroke="rgba(232,202,125,0.55)" stroke-width="3"/>
+  <circle cx="920" cy="168" r="22" fill="#D8B858"/>
+  <circle cx="920" cy="168" r="22" fill="rgba(255,248,200,0.2)"/>
+
+  <!-- Orbit threads -->
+  <line x1="600" y1="220" x2="780" y2="220" stroke="rgba(196,160,82,0.2)" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="600" y1="220" x2="450" y2="178" stroke="rgba(196,160,82,0.2)" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Divider line -->
+  <line x1="80" y1="360" x2="1120" y2="360" stroke="rgba(196,160,82,0.15)" stroke-width="1"/>
+
+  <!-- Brand name -->
+  <text x="600" y="430" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#C4A052" text-anchor="middle" letter-spacing="4">Career Records</text>
+  <text x="600" y="478" font-family="Georgia, serif" font-size="26" font-weight="400" fill="rgba(196,160,82,0.6)" text-anchor="middle" letter-spacing="8">IN</text>
+
+  <!-- Tagline -->
+  <text x="600" y="536" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.35)" text-anchor="middle" letter-spacing="2">Real career journeys · Interactive paths · No fluff</text>
+
+  <!-- Corner marks -->
+  <polyline points="80,80 80,100 100,100" fill="none" stroke="rgba(196,160,82,0.4)" stroke-width="2"/>
+  <polyline points="1120,80 1120,100 1100,100" fill="none" stroke="rgba(196,160,82,0.4)" stroke-width="2"/>
+  <polyline points="80,550 80,530 100,530" fill="none" stroke="rgba(196,160,82,0.4)" stroke-width="2"/>
+  <polyline points="1120,550 1120,530 1100,530" fill="none" stroke="rgba(196,160,82,0.4)" stroke-width="2"/>
+</svg>

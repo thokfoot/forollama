@@ -1,0 +1,13 @@
+[
+  {
+    "id": "dem_1777147906441_o8l0rt",
+    "createdAt": "2026-04-25T20:11:46.441Z",
+    "nodeId": "audit_dummy_node",
+    "nodeLabel": "Audit Dummy Node",
+    "path": [
+      "student",
+      "s_science"
+    ],
+    "source": "ui-audit-check"
+  }
+]
